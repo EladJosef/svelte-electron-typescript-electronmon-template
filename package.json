@@ -7,7 +7,9 @@
     "serve": "sirv public",
     "electron-start": "electronmon ./public/main.js",
     "start": "npm run electron-start",
-    "validate": "svelte-check"
+    "validate": "svelte-check",
+    "pack": "npm run build && electron-builder --dir",
+    "dist": "npm run build && electron-builder"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
